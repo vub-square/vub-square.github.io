@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="author" content="Wilfried Cools, principal consultant Life Sciences and Medicine">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/zenburn.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/presentation.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  
+  <aside class="gdbar">
+    <img src="assets/img/icds.png">
+  </aside>
+  
+  <hgroup class="auto-fadein">
+    <h1></h1>
+    <h2>Interfaculty Center Data processing &amp; Statistics</h2>
+    <p>Wilfried Cools, principal consultant Life Sciences and Medicine<br/>https://www.icds.be/</p>
+  </hgroup>
+  
+  <article></article>  
+  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  
+  <article data-timings="">
+    <style>
+.title-slide {
+  background-color: #FFFFFF; /* #EDE0CF; ; #CA9F9D*/
+}
+em {
+  font-style: italic;
+  font-size: 20
+}
+mini {
+  font-size: .7em;
+}
+</style>
+
+<!-- 
+library(slidify)
+# setwd("C:\\Users\\wcools\\Documents\\output\\workshops\\sample size GPower")
+slidify("icds-tech-day-2020-slidify.Rmd")
+-->
+
+<!-- 00:30 -->
+
+<!-- 02:00 -->
+
+<h2>Interfaculty Center Data processing &amp; Statistics</h2>
+
+<p>ICDS</p>
+
+<ul>
+<li>team of experts in applied statistics &amp; methodology
+
+<ul>
+<li>principal consultants: <br/>wilfried (Life Sciences &amp; Medicine) and lara (Human &amp; Social Sciences)<br>psychologists turned into applied statisticians for the love of research</li>
+<li>coordinator, kurt, the math-stats guru at ease with real life applications</li>
+<li>supporting consultants, researchers who share their expertise voluntarily <br/>(computer scientists, mathematicians, criminologist, ... )</li>
+</ul></li>
+<li>bookable @ <a href="http://www.icds.be/consulting/">www.icds.be/consulting/</a></li>
+<li>more details @ <a href="http://www.icds.be">www.icds.be</a></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  
+  <article data-timings="">
+    <!-- 03:00 -->
+
+<h2>methodological &amp; statistical support</h2>
+
+<ul>
+<li><p>provide complementary support to our research community (VUB - UZ Brussel)</p>
+
+<ul>
+<li>consultancy: <code>asking the right questions the right way</code></li>
+<li>data analysis: <code>getting the relevant information out of it</code></li>
+<li>tutoring: <code>learning to do things yourself</code></li>
+<li>automation: <code>getting the computer to do it for you</code></li>
+<li><code>...</code></li>
+</ul></li>
+<li><p>supported by: research board (UMC) &amp; vice-rectorat research policy</p></li>
+<li><p>conditions:</p>
+
+<ul>
+<li>consulting free of charge for our research community</li>
+<li>data-analysis implies co-authorship, includes follow-up / review</li>
+<li>for longer-term commitments a suitable compensation is considered</li>
+<li>check our Terms of Service at <a href="http://www.icds.be">www.icds.be</a></li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  
+  <article data-timings="">
+    <!-- 01:00 -->
+
+<h2>consulting</h2>
+
+<p><code>asking the right questions the right way</code></p>
+
+<ul>
+<li><p>discus how to</p>
+
+<ul>
+<li>turn substantive questions into research aims (the right questions)</li>
+<li>address these research aims (the right way)
+
+<ul>
+<li>with appropriate study design and sample size</li>
+<li>with appropriate statistical techniques</li>
+</ul></li>
+</ul></li>
+<li><p>includes help on</p>
+
+<ul>
+<li>interpretation and communication of the results</li>
+<li>writing of research proposals</li>
+<li><code>...</code></li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  
+  <article data-timings="">
+    <!-- 01:00 -->
+
+<h2>consulting - practicalities</h2>
+
+<p><code>asking the right questions the right way</code></p>
+
+<ul>
+<li>typically involves one or a few meetings (&lt; hour)</li>
+<li>at the consultants office (1st floor, D-building)</li>
+<li>booked through the booking-tool<br/>requesting 3 time-slots from which one is selected</li>
+<li>also available for master students working on thesis<br/>approved by the promoter</li>
+<li>does not include statistical analysis</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-5" style="background:;">
+  
+  <article data-timings="">
+    <!-- 01:30 -->
+
+<h2>data analysis</h2>
+
+<p><code>getting the relevant information out of it</code></p>
+
+<ul>
+<li><p>perform for you</p>
+
+<ul>
+<li>data analysis (descriptive, inferential)</li>
+<li>data management (eg., cleaning and preparation)</li>
+</ul></li>
+<li><p>includes</p>
+
+<ul>
+<li>communication of data and analysis to the researcher
+
+<ul>
+<li>report and R-code (supporting reproducible research)
+
+<ul>
+<li>with visualizations, summaries</li>
+<li>with discussions on choices and inference</li>
+</ul></li>
+<li>meeting (consulting)</li>
+</ul></li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-6" style="background:;">
+  
+  <article data-timings="">
+    <!-- 01:00 -->
+
+<h2>data analysis - practicalities</h2>
+
+<p><code>getting the relevant information out of it</code></p>
+
+<ul>
+<li>typically time consuming: a few days to a few weeks</li>
+<li>researchers are expected to participate
+
+<ul>
+<li>translate substantive interests into the language of statisticians</li>
+<li>provide data that is easy to understand and deal with</li>
+<li>show appropriate skepticism to ensure analyses are correct</li>
+<li>try to understand and learn for future research</li>
+</ul></li>
+<li>as co-author, consultants take responsibility
+
+<ul>
+<li>support in writing the statistical part of the manuscript</li>
+<li>dealing with reviewer comments</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-7" style="background:;">
+  
+  <article data-timings="">
+    <!-- 01:30 -->
+
+<h2>data analysis - case 1</h2>
+
+<p><font size=2>Flamée, P., Varnavas, V., Dewals, W., Carvalho, H., Cools, W., Bhutia, J. T., Beckers, S., Umbrain, V., Verborgh, C., Forget, P., Chierchia, G.-B., Brugada, P., Poelaert, J., &amp; de Asmundis, C. (2020). Electrocardiographic Effects of Propofol versus Etomidate in Patients with Brugada Syndrome. <em>Anesthesiology, 132</em>, 440–451.</font></p>
+
+<div style='float:left;width:62%;'>
+  <ul>
+<li>major revision, primarily due to statistics</li>
+<li>removed all statistics</li>
+<li>enhanced story, through visualizations</li>
+<li>no clear indication of systematic change</li>
+</ul>
+
+</div>
+<div style='float:right;width:33%;'>
+  <p><img src="box_HR.png"></img></p>
+
+</div>
+<div style='float:left;'>
+  
+</div>
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-8" style="background:;">
+  
+  <article data-timings="">
+    <!-- 01:00 -->
+
+<h2>data analysis - case 2</h2>
+
+<p><font size=2>Smeets, S., Stangé, G., Leuckx, G., Roelants, L., Cools, W., De Paep, D. L., Ling, Z., De Leu, N., &amp; in’t Veld, P. (2020). Evidence of Tissue Repair in Human Donor Pancreas After Prolonged Duration of Stay in Intensive Care. <em>Diabetes, 69</em>, 401-412.</font></p>
+
+<div style='float:left;width:40%;'>
+  <ul>
+<li>refined existing analysis</li>
+<li>introduced permutation tests</li>
+<li>included visualizations</li>
+<li>differences with time 0 exist</li>
+</ul>
+
+</div>
+<div style='float:right;width:50%;'>
+  <p><img src="bpx_x_hsCD68+CD206+cellsmm2.png"></img></p>
+
+</div>
+<div style='float:left;'>
+  
+</div>
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-9" style="background:;">
+  
+  <article data-timings="">
+    <!-- 01:00 -->
+
+<h2>data analysis - case 3</h2>
+
+<p><font size=2>Baert, Y., Ruetschle, I., Cools, W., Lorenz, A., Marx, U., Oehme, A., Goossens, E. and Maschmeyer, I. (in press). A multi-organ-chip co-culture of liver and testis equivalents: a first step toward a systemic male reprotoxicity model. <em>Human Reproduction</em>.</font></p>
+
+<div style='float:left;width:40%;'>
+  <ul>
+<li>dealing with
+
+<ul>
+<li>repeated measurements</li>
+<li>deviating 1st measure</li>
+<li>small sample sizes</li>
+<li>multiple conditions</li>
+</ul></li>
+<li>modeling evolution over time with mixed models</li>
+<li>various conclusions drawn
+
+<ul>
+<li>on differences in evolution</li>
+<li>on differences at end</li>
+</ul></li>
+</ul>
+
+</div>
+<div style='float:right;width:50%;'>
+  <p><img src="yoni.png"></img></p>
+
+</div>
+<div style='float:left;'>
+  
+</div>
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-10" style="background:;">
+  
+  <article data-timings="">
+    <!-- 01:00 -->
+
+<h2>data analysis - case 4</h2>
+
+<p><font size=2>Gilissen, J., Gastmans, C., Wendrich-van Dael, A., Cools, W., Vander Stichele, R., Deliens, L., Van den Block, L. &amp; Pivodic, L. (accepted). Nurses’ self-efficacy, rather than their knowledge, is associated with their engagement in advance care planning in nursing homes: a survey study. <em>Palliative Medicine</em>.</font></p>
+
+<ul>
+<li>reports for communication</li>
+<li>R-code for reproducibility</li>
+</ul>
+
+<p><img src="breport.png"></img></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-11" style="background:;">
+  
+  <article data-timings="">
+    <!-- 02:00 -->
+
+<h2>tutoring</h2>
+
+<p><code>learning to do things yourself</code></p>
+
+<ul>
+<li><p>workshop: sample size calculation with GPower</p>
+
+<ul>
+<li>introduction to reasoning on sample sizes with exercises</li>
+<li>4 times for the doctoral schools, slides available at <a href="http://www.icds.be">www.icds.be</a></li>
+</ul></li>
+<li><p>presentation: key issues in communicating methodology and statistics</p>
+
+<ul>
+<li>primarily intended for applicants WF Willy Gepts </li>
+<li>documented on-line at <a href="http://www.icds.be">www.icds.be</a></li>
+</ul></li>
+<li><p>other workshops/presentations exist at ICDS, and more are planned</p>
+
+<ul>
+<li>contact the coordinator to discuss what we can offer</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-12" style="background:;">
+  
+  <article data-timings="">
+    <!-- 01:30 -->
+
+<h2>automation</h2>
+
+<div style='float:left;width:62%;'>
+  <p><code>getting the computer to do it for you</code></p>
+
+<ul>
+<li><p>automatic processing of data</p>
+
+<ul>
+<li>into statistical results, visualizations and tables</li>
+<li>into reports or slides</li>
+</ul></li>
+<li><p>example: automatic processing of future survey data</p>
+
+<ul>
+<li>build database with available data</li>
+<li>writing code to process new data
+
+<ul>
+<li>update the database</li>
+<li>generate updated slides and reports</li>
+</ul></li>
+<li>in collaboration with commissioning doctors</li>
+</ul></li>
+</ul>
+
+</div>
+<div style='float:right;width:33%;'>
+  <p><img src="evol.png" width=350></img></p>
+
+</div>
+<div style='float:left;'>
+  
+</div>
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-13" style="background:;">
+  
+  <article data-timings="">
+    <!-- 02:00 -->
+
+<h2>other services</h2>
+
+<ul>
+<li>internal reviewer: Wetenschappelijk Fonds Willy Gepts / Ethical Committee</li>
+<li>internal consultancy: Clinical Trial Center UZ Brussel / ICDS colleagues</li>
+<li>building tools for our research community (eg., shiny apps)
+
+<ul>
+<li><a href="https://icds.shinyapps.io/aspending/">https://icds.shinyapps.io/aspending/</a> (algorithm by Susanne Blotwijk)<br/><img src="aspend.png" width=500></img></li>
+<li><a href="https://icds.shinyapps.io/shinyt/">https://icds.shinyapps.io/shinyt/</a> and others...</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-14" style="background:;">
+  
+  <article data-timings="">
+    <!-- 02:00 -->
+
+<h2>supporting consultants</h2>
+
+<div style='float:left;width:62%;'>
+  <ul>
+<li><p>researchers who support ICDS as consultant:</p>
+
+<ul>
+<li>expert statistics, mathematics: prof. Kurt Barbé</li>
+<li>expert statistics, eHealth: prof. Ronald Buyl</li>
+<li>expert pre-clinical trial design to support ECD: Susanne Blotwijk</li>
+<li>expert informatics, experienced in applied statistics: Sven Van Laere</li>
+<li>expert informatics, experienced in qualitative research: Iris Steenhout</li>
+</ul></li>
+<li><p><a href="http://www.icds.be/consulting/">www.icds.be/consulting/</a></p></li>
+</ul>
+
+</div>
+<div style='float:right;width:33%;'>
+  <p><img src="booking3.png" width=350></img></p>
+
+</div>
+<div style='float:left;'>
+  
+</div>
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-15" style="background:;">
+  
+  <article data-timings="">
+    <!-- 00:00 -->
+
+<p><img src="assets/img/icds_cf.png"></img><br/><br/><br/><br/><br/><br/><br/><br/> </p>
+
+<ul>
+<li>mail me @ <a href="mailto:wilfried.cools@vub.be">wilfried.cools@vub.be</a></li>
+<li>coordinator @ <a href="mailto:kurt.barbe@vub.be">kurt.barbe@vub.be</a></li>
+<li>website @ <a href="http://www.icds.be">www.icds.be</a></li>
+<li>book us @ <a href="http://www.icds.be/consulting/">www.icds.be/consulting/</a></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='NA'>
+         1
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='NA'>
+         2
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='NA'>
+         3
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='NA'>
+         4
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='NA'>
+         5
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title='NA'>
+         6
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=7 title='NA'>
+         7
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=8 title='NA'>
+         8
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=9 title='NA'>
+         9
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=10 title='NA'>
+         10
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=11 title='NA'>
+         11
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=12 title='NA'>
+         12
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=13 title='NA'>
+         13
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=14 title='NA'>
+         14
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=15 title='NA'>
+         15
+      </a>
+    </li>
+    
+    </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  
+<script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
